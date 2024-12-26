@@ -48,10 +48,10 @@ class TTT {
       }
 
       if (player === "O") {
-        player = "X";
+        this.playerTurn = "X";
       }
       else{
-        player = "O"
+        this.playerTurn = "O"
       }
 
       Screen.render();
@@ -109,7 +109,7 @@ class TTT {
       if (tieCheck.length === 0) {
         winner = 'T';
       }
-      
+
   }
 
   return winner;
