@@ -109,8 +109,7 @@ class TTT {
       if (tieCheck.length === 0) {
         winner = 'T';
       }
-
-      // return winner;
+      
   }
 
   return winner;
