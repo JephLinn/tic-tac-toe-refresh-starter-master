@@ -23,6 +23,7 @@ class TTT {
     Screen.addCommand("down", "move cursor down", this.cursor.down);
     Screen.addCommand("left", "move corsor left", this.cursor.left);
     Screen.addCommand("right", "move cursor right", this.cursor.right);
+    Screen.addCommand("return", "place mark", this.placeMark.bind(this))
 
     Screen.render();
   }
@@ -109,12 +110,10 @@ class TTT {
         winner = 'T';
       }
 
-      return winner;
+      // return winner;
   }
 
-
-
-
+  return winner;
   }
 
   static endGame(winner) {
